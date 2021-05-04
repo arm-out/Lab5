@@ -4,8 +4,8 @@ const form = document.getElementById('generate-meme'); // used to get form eleme
 const img = new Image(); // used to load image from <input> and draw to canvas
 const inputImg = document.getElementById('image-input'); // used to get the uploaded image
 
-const clear = document.querySelector("[type='reset']"); // used to get clear button
-const read = document.querySelector("[type='button']"); // used to get read button
+const clear = document.getElementById("[type='reset']"); // used to get clear button
+const read = document.getElementById("[type='button']"); // used to get read button
 
 const topText = document.getElementById('text-top'); // used to get top text input
 const bottomText = document.getElementById('text-bottom'); // used to get bottom text input
@@ -15,8 +15,7 @@ const volumeGroup = document.getElementById('volume-group'); // used to get volu
 const volumeIcon = document.querySelector('img'); // used to get volume icon
 const volumeLevel = document.querySelector("[type='range']"); // used to get volume level
 
-var voices = speechSynthesis.getVoices()
-console.log(voices);
+const voices = synth.getVoices();
 
 // Fires whenever the img object loads a new image (such as with img.src =)
 img.addEventListener('load', () => {
@@ -38,7 +37,7 @@ img.addEventListener('load', () => {
   clear.removeAttribute('disabled');
 });
 
-inputImg.addEventListener('change', (event)=> {
+imgInput.addEventListener('change', (event)=> {
   img.src = URL.createObjectURL(event.target.files[0])
 });
 
@@ -145,7 +144,7 @@ volumeGroup.addEventListener('change', (event)=> {
  * and also the starting X and starting Y coordinate to be used when you draw the new image to the
  * Canvas. These coordinates align with the top left of the image.
  */
-function getDimensions(canvasWidth, canvasHeight, imageWidth, imageHeight) {
+function getDimmensions(canvasWidth, canvasHeight, imageWidth, imageHeight) {
   let aspectRatio, height, width, startX, startY;
 
   // Get the aspect ratio, used so the picture always fits inside the canvas

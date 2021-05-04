@@ -1,12 +1,12 @@
 # CSE110 SP21 Lab 5
 
 ## Author(s):
-- YOUR NAME
+- Armin Suraj
 
 ## Part 1:
 
-LINK TO YOUR PUBLISHED SITE
+https://arm-out.github.io/Lab5/
 
 ## Part 2:
 
-LINK TO YOUR PART 2 REPOSITORY
+https://github.com/arm-out/github-actions-for-ci
