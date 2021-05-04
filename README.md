@@ -9,4 +9,4 @@ https://arm-out.github.io/Lab5/
 
 ## Part 2:
 
-https://github.com/arm-out/github-actions-for-ci
+https://github.com/arm-out/github-actions-for-ci/issues/7
